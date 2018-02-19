@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+<style>
+
+
+.micro
+
+{
+
+color:green;
+font-family: arial;
+font-size:20px;
+
+}
+
+
+</style>
+<script>
+function solar()
+{
+var a = document.getElementById("ark").value;
+var b = a.value
+var elk = document.getElementById("elk").setAttribute("class", "micro")
+
+
+switch(a)
+{
+case  "10sec" :
+
+b = "good Timeing";
+break;
+
+case "9sec" :
+
+b= "Excelent Timeing"
+break;
+
+case "8sec" :
+
+b= "Outstanding"
+break;
+
+case "7sec" :
+
+
+b="God speed";
+
+break;
+
+default:
+
+b= "Please Enter your Timing";
+
+
+}
+document.getElementById("demo").value = b;
+document.getElementById("elk").innerHTML= b;
+
+
+
+}
+</script>
+</head>
+<body>
+<input type="text" name="uname" id="ark" placeholder="Ex:9sec">
+<input type="button" name="btn" value="click" onclick ="solar()">
+<input type="text"id="demo">
+<p id ="elk"></p>
+</body>
+</html>
